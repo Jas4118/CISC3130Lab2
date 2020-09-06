@@ -12,9 +12,9 @@ import java.util.Set;
 
 public class Lab2 {
 	public static void main(String[]args) throws IOException {
-		 	FileReader fr = new FileReader("D:\\JavaFile\\regional-global-daily-latest.csv"); //Have to use BufferedReader because it stopped reading when I used Scanner
+		FileReader fr = new FileReader("regional-global-daily-latest.csv"); //Have to use BufferedReader because it stopped reading when I used Scanner
 	        BufferedReader br = new BufferedReader(fr);
-	        File output= new File(("D://JavaFile//strOutputF.txt")); 
+	        File output= new File(("strOutputF.txt")); 
 	        PrintWriter outputWriter = new PrintWriter(output);
 	        Set<artistName> names=new HashSet<artistName>();
 	        br.readLine();
@@ -30,8 +30,7 @@ public class Lab2 {
 	        			}
 	        		}
 	        	}
-	        	
-	            //outputWriter.println(line.split(",")[2]);
+
 	        }
 	        for(artistName artist : nameSet ) {
 	        	outputWriter.println(artist);
