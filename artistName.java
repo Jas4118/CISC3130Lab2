@@ -38,7 +38,7 @@ public class artistName {
 	}
 	@Override
 	public String toString() { // Overrides the toString method
-		return name +" frequency ="+ + frequency ;
+		return name +" frequency =" + frequency ;
 	}
 	
 	
