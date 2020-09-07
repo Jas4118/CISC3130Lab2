@@ -14,7 +14,7 @@ public class Lab2 {
 	public static void main(String[]args) throws IOException {
 		FileReader fr = new FileReader("regional-global-daily-latest.csv"); //Have to use BufferedReader because it stopped reading when I used Scanner
 	        BufferedReader br = new BufferedReader(fr);
-	        File output= new File(("Artists-WeekOf09062020")); //Prints to this file
+	        File output= new File(("Artists-WeekOf09062020.txt")); //Prints to this file
 	        PrintWriter outputWriter = new PrintWriter(output);
 	        Set<artistName> names=new HashSet<artistName>(); //Creating a hashset to put all my data in
 	        br.readLine();
