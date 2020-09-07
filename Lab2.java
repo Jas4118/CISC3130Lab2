@@ -24,7 +24,7 @@ public class Lab2 {
 	        	String nameLine=line.split(",")[2]; // Sets the line with the artist name
 	        	artistName temp=new artistName(nameLine);
 	        	if (nameSet.add(temp)==false) { // If the object wasn't added into the hashset
-	        		for(artistName artist : nameSet ) { //iterates by looking
+	        		for(artistName artist : nameSet ) { //iterates by looking for the artist Obj
 	        			if(artist.equals(temp)) {
 	        				artist.setFrequency(artist.getFrequency()+1);
 	        			}
@@ -32,7 +32,7 @@ public class Lab2 {
 	        	}
 
 	        }
-	        for(artistName artist : nameSet ) {
+	        for(artistName artist : nameSet ) { //Prints to outputF the toString from artistName
 	        	outputWriter.println(artist);
 	        }
 	        br.close();
