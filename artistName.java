@@ -3,7 +3,7 @@ package cisc3130Lab2;
 public class artistName {
 	private String name;
 	private int frequency;
-	public artistName(String name) {
+	public artistName(String name) {// Constructor for artist object
 		this.name=name;
 		this.frequency=1;
 	}
