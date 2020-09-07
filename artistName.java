@@ -30,14 +30,14 @@ public class artistName {
 			return false;
 		return true;
 	}
-	public void setFrequency(int frequency) {
+	public void setFrequency(int frequency) { //setter for frequency
 		this.frequency = frequency;
 	}
-	public int getFrequency() {
+	public int getFrequency() { //getter for frequency
 		return frequency;
 	}
 	@Override
-	public String toString() {
+	public String toString() { // Overrides the toString method
 		return name +" frequency ="+ + frequency ;
 	}
 	
